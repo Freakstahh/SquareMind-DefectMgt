@@ -1,0 +1,47 @@
+InternalCodeName vSM.020.011 UnitTest Registration [Registration]: Invalid Username Special Characters Fail
+
+[Summary]
+	When Registering with special characters it will still continue to register despite not allowed to.
+
+[Precondition]
+ Software version: vSM.020.011
+ Software configuration: None
+ Hardware specifications: None
+ Network configuration: None
+
+[Steps to reproduce]
+ 1. Go to Sign up page
+ 2. Fill in username with special characters
+
+[Actual results]
+Account registration succesful
+[Expected results]
+Account should not be created because of the presence of special characters in the username.
+[Additional information]
+ None
+
+[Is this Breakage?]
+ No, missed from previous pass
+
+[Previous code tested]
+ SM.020.011
+ 
+[Severity: How does this problem impact the customer/user?]
+ 1. Specification issue
+
+ 
+[Likelihood: How often will a customer/user use this feature/function?]
+ 6. Moderate
+
+[Repeatability: Is this problem easily reproducible?]
+
+ 10. 100% Reproducible
+
+[Impacted Test Cases]
+  REG-0003: Registration testing - Invalid Email
+
+[Impact Sizing (in days)]
+ Less than a day
+
+/* Please Don't Share This Information to Others recklessly,
+** However, you may use this as basis for your software testing endeavors. */
