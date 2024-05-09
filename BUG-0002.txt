@@ -1,0 +1,48 @@
+SmartRent vSM.020.012 UnitTest Registration [Registration]: Invalid Username Special Characters Fail
+
+[Summary]
+	When inputting negative quantity
+
+[Precondition]
+ Software version: vSM.020.012
+ Software configuration: None
+ Hardware specifications: None
+ Network configuration: None
+
+[Steps to reproduce]
+1	Enter a valid item name into the item field.	
+2	Enter a negative quantity into the quantity field.
+3	Enter a valid date into the date field.
+3	Click on the "Record Sale" button.	
+[Actual results]
+Sale accepts negative quantity and should not record sale.
+[Expected results]
+Sale is not recorded
+[Additional information]
+ It adds the inputted value to the current stock.
+
+[Is this Breakage?]
+ No, new implementation
+
+[Previous code tested]
+ SM.020.011
+ 
+[Severity: How does this problem impact the customer/user?]
+ 2. Cosmetic issue / User is inconvenienced
+
+ 
+[Likelihood: How often will a customer/user use this feature/function?]
+ 2. Low, only special types of users
+
+[Repeatability: Is this problem easily reproducible?]
+
+ 10. 100% Reproducible
+
+[Impacted Test Cases]
+  SALESREC-0006: Sales record testing - Negative Quantity
+
+[Impact Sizing (in days)]
+ Less than a day
+
+/* Please Don't Share This Information to Others recklessly,
+** However, you may use this as basis for your software testing endeavors. */
